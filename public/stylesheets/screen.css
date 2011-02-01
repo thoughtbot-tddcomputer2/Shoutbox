@@ -35,26 +35,50 @@ label {
   text-shadow: 0 1px 0 #eee;
 }
 ul {
-	margin: 10px 10px;
+	margin: 25px 10px;
 }
 li {
 	margin: 5px 0;
-	
+	list-style: none;
 }
+li.comment {
+  background: #E6E6E6;
+  margin: 8px 0;
+  padding: 8px 5px;
+}
+ul a {
+	font-size: 10px;
+}
+strong, b {
+	font-weight: bold;
+}
+
 h1 { 
 	font-size: 22px;
+	font-weight: bold;
 	margin-bottom: 15px;
 	}
+div#heading {
+	margin: 10px auto 20px;
+	width: 300px;
+}
 a {
 	color: #333;
 }
 a:hover {
 	color: #999;	
 }
-div#shout-form, div#shout-list {
-	margin: 20px 0;
+div#button {
+	width: 300px;
+	margin: 0 auto;
 }
-
+div#shout-form, div#shout-list, div#new-comment {
+	margin: 0 auto;
+	width: 300px;
+}
+div#shout-list {
+	border-left: 3px solid #333;
+}
 div.error,
 #flash_failure {
   background: red;

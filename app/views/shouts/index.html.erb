@@ -2,13 +2,27 @@
 <% @shouts.each do |s| %>
   <ul>
     <li>
-     Name: <%= s.name %> 
+     <strong>Name:</strong> <%= s.name %> 
     </li>
     <li>
-      Shout: <%= s.body %>
+      <b>Shout:</b> <%= s.body %>
     </li>
+    <li>
+        <% s.comments.each do |c| %>
+          <li class="comment">
+            <%= c.body %>
+          </li>
+        <% end %>
+    </li>
+    <%= link_to "Comment", new_shout_comment_path(s) %>
+    <%= link_to "Edit Shout", edit_shout_path(s) %>
+    <%= link_to "Delete Shout", shout_path(s), :method => :delete %>
   </ul>
 <% end %>
-</div>
 
-<%= link_to "Add Shout", new_shout_path %>
+</div>
+<div id="button">
+  <button>
+    <%= link_to "Add Shout", new_shout_path %>
+  </button>
+</div>

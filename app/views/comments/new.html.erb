@@ -1,0 +1,23 @@
+<div id="new-comment">
+  <div>
+    <li>
+      <strong>Name:</strong> <%= @shout.name %>
+    </li>
+    <li>
+      <b>Body:</b> <%= @shout.body %>
+    </li>
+  </div>
+
+  <div>
+    <%= form_for [@shout, @comment] do |form| %>
+      <%= form.error_messages %>
+      <p>
+        <%= form.label     :body %>
+        <%= form.text_area :body %>  
+      </p>
+      <p>
+        <%= form.submit %>
+      </p>
+    <% end %>
+  </div>
+</div>

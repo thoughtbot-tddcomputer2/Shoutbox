@@ -1,5 +1,7 @@
 Shoutbox::Application.routes.draw do
-  resources :shouts, :only => [:new, :create, :index]
+  resources :shouts, :only => [:new, :create, :edit, :update, :destroy, :index] do
+    resources :comments, :only => [:new, :create]
+  end
   root :to => "shouts#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
