@@ -7,7 +7,16 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  
+<% link_to (root_url) do %>
+<h1>Shoutbox</h1>
+<% end %>
 
+<div id="flash">
+ <% flash.each do |key,value| -%>
+   <div id="flash_<%= key %>"><%=h value %></div>
+ <% end -%>
+</div>
 <%= yield %>
 
 </body>

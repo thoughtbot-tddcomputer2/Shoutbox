@@ -1,0 +1,298 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#eee));
+  font-family: "lucida grande", sans-serif;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+	padding: 20px;
+}
+
+#container {
+  background: #d6d6d6;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 0 0 #fff;
+  margin: 80px auto;
+  padding: 10px 0 20px 50px;
+  width: 720px;
+}
+
+.element {
+  float: left;
+  margin: 20px 10px 20px 0;
+  width: 350px;
+}
+
+label {
+  color: #555;
+  display: block;
+  font-size: 11px;
+  margin: 0 0 4px 0;
+  text-shadow: 0 1px 0 #eee;
+}
+ul {
+	margin: 10px 10px;
+}
+li {
+	margin: 5px 0;
+	
+}
+h1 { 
+	font-size: 22px;
+	margin-bottom: 15px;
+	}
+a {
+	color: #333;
+}
+a:hover {
+	color: #999;	
+}
+div#shout-form, div#shout-list {
+	margin: 20px 0;
+}
+
+div.error,
+#flash_failure {
+  background: red;
+  color: black; }
+
+div.notice,
+#flash_notice {
+  background: yellow;
+  color: black; }
+
+div.success,
+#flash_success {
+  background: green;
+  color: white; }
+
+/* reset all elements */
+/******************************************************************************/
+input {
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+select {
+  background: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background: transparent;
+  border: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+input {
+  font-size: 12px;
+}
+
+textarea,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+}
+
+
+/*:invalid {
+    border-color: #e88;
+    -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, .8);
+  }
+
+[required] {
+  border-color: #88a;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 255, .5);
+}
+*/
+/* add the real style */
+/******************************************************************************/
+textarea,
+input[type="text"],
+input[type="password"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 8px 6px;
+  width: 300px;
+}
+
+textarea {
+  height: 60px;
+  margin-bottom: 15px;
+  width: 300px;
+}
+label { margin: 5px 0; }
+
+input[type="search"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 8px 6px;
+  width: 300px;
+}
+
+input[type="date"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 8px 6px;
+  width: 300px;
+}
+
+input[type="tel"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 8px 6px;
+  width: 300px;
+}
+
+input[type="number"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 8px 6px;
+  width: 300px;
+}
+
+input[type="checkbox"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 10px;
+}
+
+input[type="checkbox"]:checked:after {
+  background: #555;
+  border-radius: 3px;
+  content: "";
+  margin: -6px -6px;
+  padding: 6px;
+  position: absolute;
+}
+
+input[type="radio"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 10px;
+}
+
+input[type="radio"]:disabled {
+  background: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 10px;
+}
+
+input[type="radio"]:checked:after {
+  background: #555;
+  border-radius: 5px;
+  content: "";
+  margin: -5px -5px;
+  padding: 5px;
+  position: absolute;
+}
+
+input[type="file"] {
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #e3e3e3, 0 1px 0 0 #efefef;
+  padding: 4px 0 4px 10px;
+  width: 300px;
+}
+
+input[type="file"]:hover,
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ddd));
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff;
+  color: #555;
+  font-size: 11px;
+  left: -6px;
+  padding: 2px 6px 3px;
+  position: relative;
+  text-shadow: 0 1px 0 #fff;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+input[type="input"]::-webkit-input-placeholder {
+  color: #f00;
+  font-size: 14px;
+}
+
+select {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ddd));
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #efefef;
+  color: #555;
+  padding: 8px;
+  text-shadow: 0 1px 0 #fff;
+  width: 150px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+input[type="submit"], button {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ddd));
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #efefef;
+  color: #555;
+  font-weight: bold;
+  padding: 8px;
+  text-shadow: 0 1px 0 #fff;
+  width: 150px;
+}
+
+input[type="submit"]:hover, button:hover {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e6e6e6), to(#d6d6d6));
+  border: 1px solid #c6c6c6;
+  -webkit-box-shadow: inset 0 1px 0 0 #f6f6f6, 0 1px 0 0 #efefef;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #f6f6f6;
+}
+
+input[type="submit"]:active, button:active {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e0e0e0), to(#d0d0d0));
+  border: 1px solid #c0c0c0;
+  -webkit-box-shadow: inset 0 1px 0 0 #f0f0f0, 0 1px 0 0 #f6f6f6;
+  text-shadow: 0 1px 0 #f0f0f0;
+}

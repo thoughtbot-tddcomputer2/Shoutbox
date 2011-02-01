@@ -1,0 +1,16 @@
+<div id="shout-form">
+  <%= form_for @shout do |form| %>
+    <%= form.error_messages %>
+    <p>
+      <%= form.label      :name %>
+      <%= form.text_field :name %>
+    </p>
+    <p>
+      <%= form.label     :body %>
+      <%= form.text_area :body %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>  
+  <% end %>
+</div>

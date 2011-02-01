@@ -1,0 +1,14 @@
+<div id="shout-list">
+<% @shouts.each do |s| %>
+  <ul>
+    <li>
+     Name: <%= s.name %> 
+    </li>
+    <li>
+      Shout: <%= s.body %>
+    </li>
+  </ul>
+<% end %>
+</div>
+
+<%= link_to "Add Shout", new_shout_path %>
